@@ -1,0 +1,22 @@
+/*
+    Document   : indexstyle.css
+    Created on : 2015-09-01 08:08 PM
+    Author     : Mezmerizer
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+body {
+    background-color:grey;
+   }
+p {
+    font-style: italic;
+}
+#tylersmom{color:white;}
+h1 {
+    text-align:center;
+}
+#mymom {
+    text-align:center;
+}
