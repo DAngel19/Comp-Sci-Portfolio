@@ -30,4 +30,4 @@ function doMath() {
         display.innerHTML = answer;
     }
 }
-// The navigation bar was added to users could browse my previous works. The calculator was 
+// The navigation bar was added to users could browse my previous works. The calculator was at first to make, the way to do it was already done, and also adding a square was easy by using the Math.pow which makes it into square or to the power of something. 

@@ -30,3 +30,4 @@ item4.addEventListener("click", function(){
     info2.innerHTML = "-Sailing is now practiced by athletes in more than 70 countries. It is one of the few Paralympic sports where able-bodied and disabled athletes can compete together at competitions outside the Paralympic Games. Adaptations to boats allow people with varying disabilities to operate the boats using different techniques.";
     info3.innerHTML = "-All races are fleet races, meaning that all boats start at the same time.";
 });
+// The navigation bar was added to users could browse my previous works. The coding I used to make it work was by having the click functions which can make the user to click on an image and see a description of that sport.

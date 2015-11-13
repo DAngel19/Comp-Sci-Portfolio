@@ -34,4 +34,4 @@ todo.addEventListener('click', function(evt) {
   evt.preventDefault();
 
 }, false);
-
+// The navigation bar was added to users could browse my previous works. This was much difficult to make because the dropdown was hard to do and also trying to make what to do. The way was the same way to make the calculator, with the dropdown. 
