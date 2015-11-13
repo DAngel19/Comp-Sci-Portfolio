@@ -30,3 +30,4 @@ function doMath() {
         display.innerHTML = answer;
     }
 }
+// The navigation bar was added to users could browse my previous works. The calculator was 
