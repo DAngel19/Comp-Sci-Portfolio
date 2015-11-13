@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Document</title>
+</head>
+<style>
+        body {
+            background-color:black;
+            color:white;
+        }
+        #navbar li{
+          Display:inline;
+          color:Black;
+          text-decoration:none;
+          padding:20px;
+          width:550px;
+          border-style:solid;
+          background-image:url("https://0.s3.envato.com/files/69509334/590x300_thumb_C7.jpg");
+          background-size: 100px
+}  
+        #navbar a{
+            text-decoration:none;
+            color:White
+}
+        
+</style>
+<body>
+ <div id="navbar">
+        <div style=text-align:center;>
+        <ul style="text-align:center">
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="htmlpage.html">HTML</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="calc.html">Calculator</a></li>
+            <li><a href="info.html">Info Site</a></li>
+            <li><a href="todo.html">To Do List</a></li>
+        </ul>
+<input type ="text" name="input1" style="width:50px; position:relative; top:90px" id="input1">
+    <select id="dropdown" style="position:relative; top:90px">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+        <option value="^">^</option>
+    </select>
+    <input style="position:relative; top:90px" type ="text" name="input2" style="width:50px;" id="input2">
+    <input style="position:relative; top:90px" type="button" value="Calculate" id="submitButton" />
+
+    <p style="position:relative; top:90px">The answer is: <span id="display"></span></p>
+<script src="calc.js" ></script>
+</div>
+</body>
+</html>
