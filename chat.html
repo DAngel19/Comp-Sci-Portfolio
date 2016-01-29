@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>I call HAX!</title>
+    </head>
+    <style>
+        #header{
+            text-align:center;
+            color:rgb(0,255,255);
+        }
+        #body{
+            background-color:black;
+            color:white;
+        }
+        .chat-txt-message {
+            font-family:sans-serif;
+        }
+        #texting {
+           position:relative;
+           top:80px;
+           right:327px;
+        }
+        #send {
+            position:relative;
+            top:100px;
+            right:378px;
+        }
+        #receive {
+            color:rgb(0,255,255);
+            float:right;
+            border: 2px solid white;
+            width: 200px;
+        }
+        #from {
+            position:relative;
+            left:1145px;
+        }
+        #welcome {
+            color: rgb(0, 255, 255);
+            text-align: center;
+        }
+        #navbar li{
+          Display:inline;
+          color:black;
+          text-decoration:none;
+          padding:20px;
+          width:550px;
+          border-style:solid;
+          background-image:url("https://0.s3.envato.com/files/69509334/590x300_thumb_C7.jpg");
+          background-size: 100px
+      }  
+        #navbar a{
+            text-decoration:none;
+            color:White;
+        }
+    </style>
+    <!--This is a navbar where I can navigate throughout my website.-->
+    <body id = "body" >
+        <div id="navbar">
+        <ul style="text-align:center">
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="htmlpage.html">HTML</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="calc.html">Calculator</a></li>
+            <li><a href="info.html">Info Site</a></li>
+            <li><a href="todo.html">To Do List</a></li>
+            <li><a href="chat.html">I Call HAX!</a></li>
+        </ul>
+       <!--This is the title, manual and text boxes. The title is what this site is called by using the header tag. Then the manual on how to use thi site with the paragraph tag and the text boxes I used the input and text area. Also using the dummy texts which is the placeholder tag.-->
+        <h1 id = "header" >I Call HAX!!</h1>
+        <p id = "welcome" >Welcome to I Call HAX!</p>
+        <p id = "welcome" >To start hacking, you must know who you are going to hack by putting the right phone number with dashes (e.g. 1-555-555-5555) and you can either choose to call, text or play a song. Put what you want in the large text box. The call option calls the person and says what typed in. The text option is like texting the person but you are anonymous. The call and play music option is where you can put a song and it will call the person and play the song. However, in order to get the music to play it has to come from a mp3 and use the url (e.g. http://mean2u.rfshq.com/downloads/music/giveyouup.mp3).</p>
+        <input id= "phoneNum" class="chat-txt-message" name="message" type="text" placeholder="Phone number" autocomplete="off" maxlength="255"/>
+         <!--This is the drop down menu where the user can choose the option, this is using the select tag and the option tag.-->
+         <select id="drop">
+          <option value="callAndSay">Call</option>
+          <option value="sendMessage">Text Message</option>
+          <option value="callAndPlay5">Call and Play Music</option>
+        </select>
+        <textarea id="texting" class="chat-txt-message" rows="4" cols="50" placeholder="Click here to start typing"></textarea>
+        <input id="send" type="submit" name="go" value="Send"/>
+        <p id = "from">Message from them:</p>
+        <!--This is a div where it is scrollable so the user can scroll see the message.-->
+        <div id = "receive" style="overflow-y: scroll; height:400px;"></div>
+   <!--This is where I connect HTML to JS and Twilio by using the script tag and the src. -->
+   <script src="//bit.ly/twilio-basic-v7"
+  sid="AC2af8baa9a6df8d641cbb61f7c70e9741"
+  token="39c9a8c1b04461650f63df0b8b3d06d4"></script>
+   <script src="chat.js"></script>
+   </body>
+</html>
