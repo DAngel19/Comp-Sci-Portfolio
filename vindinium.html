@@ -104,7 +104,7 @@ Bot.prototype.botBrain = function() {
          * This Code Decides WHAT to do         *
          *                                      */
         var task;
-        if(bot.yourBot.life < 60){
+        if(bot.yourBot.life < 40){
             task="taverns"
         }else if(bot.findDistance(myPos,[closeEnemy.pos.x,closeEnemy.pos.y])<5&&closeEnemy.pos.x.life<bot.yourBot.life-20){
             task="hunt"
